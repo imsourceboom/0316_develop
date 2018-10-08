@@ -12,13 +12,13 @@ const Wrap = styled.article`
 
 const Container = () => (
 	<Wrap>
-		<Route exact path="/" component={About} />
+		<Route exact path="/0316_develop" component={About} />
 		<Switch>
-		<Route path="/portfolio/:id" component={Detail} />
-		<Route path="/portfolio" component={Portfolio} />
+		<Route path="/0316_develop/portfolio/:id" component={Detail} />
+		<Route path="/0316_develop/portfolio" component={Portfolio} />
 		</Switch>
-		<Route path="/language" component={Language} />
-		<Route path="/info" component={Info} />
+		<Route path="/0316_develop/language" component={Language} />
+		<Route path="/0316_develop/info" component={Info} />
 	</Wrap>
 );
 

@@ -49,28 +49,28 @@ const Container = () => {
 			<ul>
 				<li>
 					<h4>
-						<NavLink exact to="/" activeStyle={activeStyle}>
+						<NavLink exact to="/0316_develop" activeStyle={activeStyle}>
 							About
 						</NavLink>
 					</h4>
 				</li>
 				<li>
 					<h4>
-						<NavLink to="/portfolio" activeStyle={activeStyle}>
+						<NavLink to="/0316_develop/portfolio" activeStyle={activeStyle}>
 							Portfolio
 						</NavLink>
 					</h4>
 				</li>
 				<li>
 					<h4>
-						<NavLink to="/language" activeStyle={activeStyle}>
+						<NavLink to="/0316_develop/language" activeStyle={activeStyle}>
 							Language
 						</NavLink>
 					</h4>
 				</li>
 				<li>
 					<h4>
-						<NavLink to="/info" activeStyle={activeStyle}>
+						<NavLink to="/0316_develop/info" activeStyle={activeStyle}>
 							Info
 						</NavLink>
 					</h4>

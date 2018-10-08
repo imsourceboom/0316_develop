@@ -36,7 +36,7 @@ const CardBox = styled(Ui.Box)`
 `;
 
 const Card = ({ id, title, summary, duration }) => (
-	<Link to={`/portfolio/${id}/`}>
+	<Link to={`/0316_develop/portfolio/${id}/`}>
 		<CardBox duration={duration}>
 			<Title>
 				{title}
