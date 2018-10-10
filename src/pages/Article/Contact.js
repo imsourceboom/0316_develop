@@ -12,7 +12,7 @@ const Card = styled(Ui.Box)`
 	}
 `;
 
-const Info = () => (
+const Contact = () => (
 	<Card duration={1}>
 		<p>
 			E-mail :<br /> 0316develop@gmail.com
@@ -29,4 +29,4 @@ const Info = () => (
 	</Card>
 );
 
-export default Info;
+export default Contact;
