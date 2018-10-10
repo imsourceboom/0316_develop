@@ -6,10 +6,8 @@ import breakpoint from 'styled-components-breakpoint';
 import * as Animate from 'style/Animate';
 
 const Wrap = styled.nav`
-	&.Nav {
-		width: 100%;
-		animation: ${Animate.fadeIn} 1.5s;
-	}
+	width: 100%;
+	animation: ${Animate.fadeIn} 1.5s;
 
 	& ul {
 		margin: 0;
@@ -47,7 +45,7 @@ const Container = () => {
 		color: '#000'
 	};
 	return (
-		<Wrap className="Nav">
+		<Wrap>
 			<ul>
 				<li>
 					<h4>

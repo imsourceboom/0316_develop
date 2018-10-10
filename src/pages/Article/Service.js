@@ -14,6 +14,10 @@ const Card = styled(Ui.Box)`
 
 	& span {
 		font-size: 12px;
+        opacity: 0.85;
+        &:hover {
+            opacity: 1;
+        }
 	}
 `;
 
@@ -36,7 +40,7 @@ const Service = () => (
 			</span>
 		</Card>
 		<Card duration={1}>
-			<p>Resposive</p>
+			<p>Responsive</p>
 			<span>
 				인터넷 점유율의 40%가 모바일 디바이스에서 발생하고 있습니다.
 				<br />

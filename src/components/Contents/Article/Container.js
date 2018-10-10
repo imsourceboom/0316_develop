@@ -4,17 +4,19 @@ import { About, Portfolio, Service, Contact } from 'pages/Article';
 import Detail from 'components/Detail';
 // import { Detail } from 'pages/Detail';
 import styled from 'styled-components';
-// import breakpoint from 'styled-components-breakpoint';
+import breakpoint from 'styled-components-breakpoint';
 
 const Wrap = styled.article`
-	&.Article {
-		padding: 10px 0;
-		padding-bottom: 40px;
-	}
+	padding: 10px 0;
+	padding-bottom: 40px;
+
+	${breakpoint('tablet')`
+		padding-bottom: 70px;
+	`};
 `;
 
 const Container = () => (
-	<Wrap className="Article">
+	<Wrap>
 		<Route exact path="/0316_develop" component={About} />
 		<Switch>
 			<Route path="/0316_develop/portfolio/:id" component={Detail} />
