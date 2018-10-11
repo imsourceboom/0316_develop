@@ -65,6 +65,10 @@ const ContentContainer = styled.div`
 	max-width: 769px;
 	padding: 40px 16px;
 
+	& ul {
+		list-style-type: initial;
+	}
+
 	& .visit-link {
 		background-image: none;
 	}
@@ -159,7 +163,7 @@ const Container = ({
 					<div style={{ width: '2.5rem' }} />
 				</TitleContainer>
 			</TitleWrap>
-			<ContentContainer id="parent">
+			<ContentContainer>
 				<Title>
 					{data.project.map(
 						content => String(content.id) === id && content.title

@@ -22,21 +22,26 @@ const About = () => (
 				가장 현대적인 웹 기술을 지향합니다.
 				<br />
 				<br />
-				사용자 경험
+				<br />
+				사용자 친화적인 디자인과 경험을 위해
 				<br />
 				<br />
-				신속하고 정확하게 제공합니다.
+				지속적인 노력을 합니다.
 			</p>
 		</Card>
 		<Card duration={1.5}>
 			<p>
-				Koinvestor promptly and accurately delivers
+				0316 Develop
+				<br/>
+				<br/>
+				Aiming for the most modern web Technologies.
+				<br/>
+				<br/>
+				<br/>
+				User Experience
 				<br />
 				<br />
-				the official information of the global blockchain projects,
-				<br />
-				<br />
-				through mutual cooperation, to the Korean investors.
+				Deliver quickly and Accurately.
 			</p>
 		</Card>
 	</>

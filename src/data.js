@@ -1,4 +1,4 @@
-import { MyToken, Koinvestor } from 'pages/Detail'
+import { MyToken, Koinvestor,Busan1st } from 'pages/Detail'
 
 export const data = {
 	project: [
@@ -26,10 +26,10 @@ export const data = {
 			id: 3,
 			name: 'Busan1st',
 			summary: 'Busan Real Estate',
-			title: '',
-			description: '',
-			url: '',
-			footnote: '',
+			title: Busan1st.lego.title,
+			description: Busan1st.lego.content,
+			url: 'http://www.busan1st.com/',
+			footnote: '* 리팩토링 중입니다.',
 			duration: 1.3
 		},
 		{
