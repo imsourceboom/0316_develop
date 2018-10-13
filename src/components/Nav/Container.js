@@ -7,6 +7,8 @@ import * as Animate from 'style/Animate';
 
 const Wrap = styled.nav`
 	width: 100%;
+	max-width: 769px;
+	margin: 0 auto;
 	animation: ${Animate.fadeIn} 1.5s;
 
 	& ul {
