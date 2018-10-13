@@ -1,10 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
+import Section from 'components/Contents/Section';
 
-import Nav from 'components/Contents/Nav';
-import Article from 'components/Contents/Article';
-
-const Wrap = styled.section`
+const Wrap = styled.main`
 	width: 100%;
 	max-width: 769px;
 	margin: 0 auto;
@@ -12,8 +10,7 @@ const Wrap = styled.section`
 
 const Container = () => (
 	<Wrap>
-		<Nav />
-		<Article />
+		<Section />
 	</Wrap>
 );
 

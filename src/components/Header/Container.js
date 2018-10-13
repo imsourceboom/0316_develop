@@ -6,7 +6,7 @@ import logo from 'assets/logo.png';
 const Logo = styled.div``;
 const Name = styled.h4``;
 const Mind = styled.div``;
-const Wrap = styled.section`
+const Wrap = styled.header`
 	height: 300px;
 	display: flex;
 	flex-direction: column;

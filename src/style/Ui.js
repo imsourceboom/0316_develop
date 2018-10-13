@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import breakpoint from 'styled-components-breakpoint'
 
-export const Box = styled.div`
+export const Box = styled.article`
     padding: 20px 18px;
     border-radius: 10px;
     border-bottom: 0.5px solid #f8f8f8;

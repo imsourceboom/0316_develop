@@ -1,17 +1,16 @@
 import React, { Component } from 'react';
-import styled from 'styled-components';
 import Header from 'components/Header';
+import Nav from 'components/Nav';
 import Contents from 'components/Contents';
-
-const RootWrap = styled.main``;
 
 class App extends Component {
 	render() {
 		return (
-			<RootWrap>
+			<>
 				<Header />
+				<Nav />
 				<Contents />
-			</RootWrap>
+			</>
 		);
 	}
 }

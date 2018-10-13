@@ -1,20 +1,19 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import breakpoint from 'styled-components-breakpoint'
+import breakpoint from 'styled-components-breakpoint';
 import { KeyboardArrowRight } from 'styled-icons/material/KeyboardArrowRight';
 import * as Animate from 'style/Animate';
 import * as Ui from 'style/Ui';
 
 import { data } from 'data';
 
-const Wrap = styled.div``;
 const Title = styled.span`
 	font-size: 14px;
 	${breakpoint('tablet')`
         font-size: 15px;
-    `}; 
-    & small {
+    `};
+	& small {
 		opacity: 0.75;
 	}
 `;
@@ -51,7 +50,7 @@ const Card = ({ id, title, summary, duration }) => (
 class Portfolio extends React.Component {
 	render() {
 		return (
-			<Wrap>
+			<>
 				{data.project.map(card => (
 					<Card
 						id={card.id}
@@ -61,7 +60,7 @@ class Portfolio extends React.Component {
 						duration={card.duration}
 					/>
 				))}
-			</Wrap>
+			</>
 		);
 	}
 }
