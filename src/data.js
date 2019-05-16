@@ -1,14 +1,17 @@
-import { MyToken, Koinvestor,Busan1st } from 'pages/Detail'
+import {
+	MyToken,
+	Koinvestor,
+	Busan1st
+} from 'pages/Detail'
 
 export const data = {
-	project: [
-		{
+	project: [{
 			id: 1,
 			name: 'My Token',
 			summary: 'CryptoCurrency Portfolio',
 			title: MyToken.lego.title,
 			description: MyToken.lego.content,
-			url: 'http://www.mytoken.co.kr/',
+			url: 'https://www.mytoken.co.kr/',
 			footnote: '* 모바일 전용 서비스입니다.',
 			duration: 0.7
 		},
@@ -18,7 +21,7 @@ export const data = {
 			summary: 'BlockChain Tech Report',
 			title: Koinvestor.lego.title,
 			description: Koinvestor.lego.content,
-			url: 'http://www.koinvestor.com/',
+			url: 'https://www.koinvestor.com/',
 			footnote: '* 업체 요청으로 비공개 중입니다.',
 			duration: 1
 		},
@@ -28,7 +31,7 @@ export const data = {
 			summary: 'Busan Real Estate',
 			title: Busan1st.lego.title,
 			description: Busan1st.lego.content,
-			url: 'http://www.busan1st.com/',
+			url: 'https://www.busan1st.com/',
 			footnote: '* 리팩토링 중입니다.',
 			duration: 1.3
 		},

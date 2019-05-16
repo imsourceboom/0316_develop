@@ -4,15 +4,15 @@ import Nav from 'components/Nav';
 import Contents from 'components/Contents';
 
 class App extends Component {
-	render() {
-		return (
-			<>
-				<Header />
-				<Nav />
-				<Contents />
-			</>
-		);
-	}
+    render() {
+        return (
+            <>
+                <Header />
+                <Nav />
+                <Contents />
+            </>
+        );
+    }
 }
 
 export default App;
