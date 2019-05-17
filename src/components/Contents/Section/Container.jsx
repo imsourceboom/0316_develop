@@ -6,24 +6,24 @@ import styled from 'styled-components';
 import breakpoint from 'styled-components-breakpoint';
 
 const Wrap = styled.section`
-	padding: 10px 0;
-	padding-bottom: 40px;
+    padding: 10px 0;
+    padding-bottom: 40px;
 
-	${breakpoint('tablet')`
+    ${breakpoint('tablet')`
 		padding-bottom: 70px;
 	`};
 `;
 
 const Container = () => (
-	<Wrap>
-		<Route exact path="/0316_develop" component={About} />
-		<Switch>
-			<Route path="/0316_develop/portfolio/:id" component={Detail} />
-			<Route path="/0316_develop/portfolio" component={Portfolio} />
-		</Switch>
-		<Route path="/0316_develop/language" component={Service} />
-		<Route path="/0316_develop/info" component={Contact} />
-	</Wrap>
+    <Wrap>
+        <Route exact path="/" component={About} />
+        <Switch>
+            <Route path="/portfolio/:id" component={Detail} />
+            <Route path="/portfolio" component={Portfolio} />
+        </Switch>
+        <Route path="/language" component={Service} />
+        <Route path="/info" component={Contact} />
+    </Wrap>
 );
 
 export default Container;
