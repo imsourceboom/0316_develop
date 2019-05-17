@@ -9,51 +9,51 @@ import breakpoint from 'styled-components-breakpoint';
 import { data } from 'data';
 
 const ArrowLeft = styled(KeyboardArrowLeft)`
-	width: 2.5rem;
-	opacity: 0.7;
+    width: 2.5rem;
+    opacity: 0.7;
 `;
 
 const ArrowRight = styled(KeyboardArrowRight)`
-	width: 2rem;
-	opacity: 0.7;
+    width: 2rem;
+    opacity: 0.7;
 `;
 
 const Wrap = styled.div`
-	width: 100%;
-	min-height: 100vh;
-	padding-top: 60px;
-	background-color: #fff;
-	position: absolute;
-	top: 0;
-	left: 0;
-	overflow: scroll;
-	display: flex;
-	justify-content: center;
-	animation: ${Animate.fadeInLeft} 0.7s;
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 60px;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: scroll;
+    display: flex;
+    justify-content: center;
+    animation: ${Animate.fadeInLeft} 0.7s;
 `;
 
 const TitleWrap = styled.div`
-	position: fixed;
-	top: 0;
-	width: 100%;
-	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
-	background-color: #fff;
-	animation: ${Animate.fadeInDown} 1s;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
+    background-color: #fff;
+    animation: ${Animate.fadeInDown} 1s;
 `;
 
 const Name = styled.div``;
 const TitleContainer = styled.div`
-	width: 100%;
-	max-width: 769px;
-	height: 60px;
-	margin: 0 auto;
-	padding: 0 10px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	& a {
-		background-image: none;
-	}
+    width: 100%;
+    max-width: 769px;
+    height: 60px;
+    margin: 0 auto;
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    & a {
+        background-image: none;
+    }
 `;
 
 const Title = styled.div``;
@@ -138,62 +138,50 @@ const ContentContainer = styled.div`
 `;
 
 const Container = ({
-	match: {
-		params: { id }
-	}
+    match: {
+        params: { id }
+    }
 }) => {
-	const moveURL = () => {
-		let result = data.project.filter(content => String(content.id) === id);
-		result = result[0].url;
-		window.open(result);
-	};
+    const moveURL = () => {
+        let result = data.project.filter(content => String(content.id) === id);
+        result = result[0].url;
+        window.open(result);
+    };
 
-	return (
-		<Wrap>
-			<TitleWrap>
-				<TitleContainer>
-					<Link to="/0316_develop/portfolio">
-						<ArrowLeft />
-					</Link>
-					<Name>
-						{data.project.map(
-							content => String(content.id) === id && content.name
-						)}
-					</Name>
-					<div style={{ width: '2.5rem' }} />
-				</TitleContainer>
-			</TitleWrap>
-			<ContentContainer>
-				<Title>
-					{data.project.map(
-						content => String(content.id) === id && content.title
-					)}
-				</Title>
-				<Article>
-					{data.project.map(
-						content =>
-							String(content.id) === id && content.description
-					)}
-				</Article>
-				<Visit onClick={moveURL}>
-					<span>
-						{data.project.map(
-							content => String(content.id) === id && content.name
-						)}
-					</span>
-					<ArrowRight />
-				</Visit>
-				<Footnote>
-					<small>
-						{data.project.map(
-							content =>
-								String(content.id) === id && content.footnote
-						)}
-					</small>
-				</Footnote>
-			</ContentContainer>
-		</Wrap>
-	);
+    return (
+        <Wrap>
+            <TitleWrap>
+                <TitleContainer>
+                    <Link to="/portfolio">
+                        <ArrowLeft />
+                    </Link>
+                    <Name>
+                        {data.project.map(content => String(content.id) === id && content.name)}
+                    </Name>
+                    <div style={{ width: '2.5rem' }} />
+                </TitleContainer>
+            </TitleWrap>
+            <ContentContainer>
+                <Title>
+                    {data.project.map(content => String(content.id) === id && content.title)}
+                </Title>
+                <Article>
+                    {data.project.map(content => String(content.id) === id && content.description)}
+                </Article>
+                <Visit onClick={moveURL}>
+                    <span>
+                        {data.project.map(content => String(content.id) === id && content.name)}
+                    </span>
+                    <ArrowRight />
+                </Visit>
+                <Footnote>
+                    <small>
+                        {data.project.map(content => String(content.id) === id && content.footnote)}
+                    </small>
+                </Footnote>
+            </ContentContainer>
+        </Wrap>
+    );
 };
 
 export default Container;
